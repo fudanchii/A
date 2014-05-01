@@ -1,15 +1,17 @@
 package b_test
 
 import (
-	"testing"
+	"fmt"
 	"github.com/fudanchii/a/b"
+	"testing"
 )
 
 func TestBbb(t *testing.T) {
 	a := true
 	b.Bbb()
-	println("Ccc")
-	if (!a) {
+	fmt.Println("Ccc")
+	if !a {
+		println("false assertion")
 		t.Errorf("false assertion")
 	}
 }
